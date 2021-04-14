@@ -12,11 +12,14 @@ body{
   align-items: center;
   height: 100vh;
   background-color: slateblue;
+  overflow: hidden;
 }
 
 h1{
   font-weight: 400;
   margin-top: 2rem;
+  transform-origin: 0 50%;
+  animation: paused fall 5.5s ease-in-out forwards;
 }
 
 figure {
@@ -43,4 +46,29 @@ a {
 
 a:hover {
   transform: scale(.98);
+}
+
+@keyframes fall {
+  10% {
+    transform: rotate(130deg);
+  } 
+  20% {
+    transform: rotate(60deg);
+  }
+  30% {
+    transform: rotate(120deg);
+  }
+  40% {
+    transform: rotate(70deg);
+  }
+  50% {
+    transform: rotate(110deg);
+  }
+  60% {
+    transform: rotate(80deg);
+  }
+  
+  100% {
+    transform: rotate(90deg) translateX(350vh);
+  }
 }
