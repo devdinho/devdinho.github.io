@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixels Art</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Pixel Art</h1>
+      </header>
+      <h1 id="title">Paleta de Cores</h1>
+      <div id="color-palette-container">
+        <div id="color-palette-wrapper">
+          <span>Cores Aleatórias</span>
+          <ul id="color-palette">
+            <li class="color black selected"></li>
+            <li class="color crimson"></li>
+            <li class="color orangered"></li>
+            <li class="color slateblue"></li>
+          </ul>
+        </div>
+        <div id="color-picker-container">
+          <label for="color-picker">Color Picker</label>
+          <input id="color-picker" type="color">
+        </div>
+      </div>
+      <div id="input-container">
+        <input id="board-size" type="number" min="1" max="50"/>
+        <button id="generate-board">VQV</button>
+      </div>
+      <button id="clear-board">Limpar</button>
+      <div id="layout-container">
+        <label for="gap-input">Grid Gap</label>
+        <input id="gap-input"type="checkbox" checked>
+        <span>Cor Selecionada: </span>
+        <div id="selected-color"></div>
+      </div>
+      <div id="pixel-board"></div>
+    </div>
+    <footer>
+      <h2>
+        Diego Figueirêdo | 
+        <a href="https://github.com/devdinho" target="_blank">Github</a> | 
+        <a href="https://devdinho.github.io/" target="_blank">Portfolio</a>
+      </h2>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

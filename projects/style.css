@@ -1,12 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
 body{
   margin: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   background-color: slateblue;
 }
 
 h1{
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  width: 300px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+figure figcaption {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+a {
   margin: auto;
-  font-family: "Nunito", sans-serif;
-  font-size: 4.5vw;
+  margin-top: 2rem;
+  color: black;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+a:hover {
+  transform: scale(.98);
 }
